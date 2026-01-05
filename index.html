@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<!-- Hidden checkbox for theme -->
+<input type="checkbox" id="theme-toggle">
+
+<div class="page">
+    <header>
+        <div class="nav-container">
+            <div class="logo">Utsav Bhanderi</div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#message">Message</a></li>
+                    <li>
+                        <label class="theme-toggle-label" for="theme-toggle">
+                            <span class="theme-label-dark">Dark</span>
+                            <span class="theme-label-light">Light</span>
+                            <span class="toggle-pill">
+                                <span class="toggle-thumb"></span>
+                            </span>
+                        </label>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero" id="top">
+            <div class="hero-text">
+                <h1>Hi, I am Utsav Bhanderi</h1>
+                <p class="subtitle"> Developer · Designer · Learner</p>
+                <p>
+                    Building clean and responsive web interfaces with a focus on user experience and performance.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#resume"><button class="btn btn-primary" type="button">View Resume</button></a>
+                    <a href="#message"><button class="btn" type="button">Message Me</button></a>
+                </div>
+            </div>
+            <div class="hero-img">
+                <img src="./img/Bhanderi-Utsav.png" alt="Profile Photo">
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about">
+            <h2>About</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        Hello, this is a short description about you, your background, and what you enjoy working on.
+                    </p>
+                    <p>
+                        Mention your strengths, your favorite technologies, and the type of projects you like to build.
+                    </p>
+                    <p><strong>Skills</strong></p>
+                    <div class="skills">
+                        <span class="skill-pill">HTML</span>
+                        <span class="skill-pill">CSS</span>
+                        <span class="skill-pill">JavaScript</span>
+                        <span class="skill-pill">Responsive</span>
+                        <span class="skill-pill">UI Design</span>
+                    </div>
+                </div>
+                <div class="about-photo">
+                    <img src="./img/Me-Professional.png" alt="Working at desk">
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume -->
+        <section id="resume">
+            <h2>Resume</h2>
+            <div class="resume-columns">
+                <div>
+                    <div class="resume-block-title">Education</div>
+                    <div class="resume-item">
+                        <h3>Master in Computer Application</h3>
+                        <span>Parul University · 2024 - 2026</span>
+                        <p>
+                            Focus on web development, data structures, and software engineering principles.
+                        </p>
+                    </div>
+                    <div class="resume-item">
+                        <h3>Bachler of Computer Application</h3>
+                        <span>National Computer College · 2021-2024</span>
+                        <p>
+                            Completed HTML, CSS, and JavaScript projects with responsive layouts.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="resume-block-title">Experience & Projects</div>
+                    <div class="resume-item">
+                        <h3>eCommorce Website  </h3>
+                        <span>CNCProducts · 2024</span>
+                        <p>
+                            Developed a full-stack eCommerce website using ASP.NET for frontend and SQLSERVER for backend.
+                        </p>
+                    </div>
+                    <div class="resume-item">
+                        <h3>eCommorce Website BCA-Sem </h3>
+                        <span>Side Project</span>
+                        <p>
+                            Developed a full-stack eCommerce website using HTML,css for frontend and PHP for backend.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact + Message -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <p>
+                        Feel free to reach out for freelance work, collaboration, or just to say hello.
+                    </p>
+                    <ul class="contact-list">
+                        <li><span class="label">Email</span> Utsav Bhanderi@email.com
+                        </li>
+                        <li><span class="label">Phone</span> +91-98765-43210
+                        </li>
+                        <li><span class="label">City</span> Ahmedabad, India
+                        </li>
+                        <li><span class="label">GitHub</span> <a href="#">github.com/Utsav Bhanderi</a>
+                        </li>
+                        <li><span class="label">LinkedIn</span> <a href="#">linkedin.com/in/Utsav Bhanderi</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <section id="message">
+                    <form>
+                        <h3 style="margin-bottom:1rem;">Message Me</h3>
+                        <div class="form-row">
+                            <label for="name">Name</label>
+                            <input id="name" type="text" placeholder="Your full name">
+                        </div>
+                        <div class="form-row">
+                            <label for="email">Email</label>
+                            <input id="email" type="email" placeholder="your@email.com">
+                        </div>
+                        <div class="form-row">
+                            <label for="subject">Subject</label>
+                            <input id="subject" type="text" placeholder="What is this about?">
+                        </div>
+                        <div class="form-row">
+                            <label for="messageText">Message</label>
+                            <textarea id="messageText" placeholder="Write your message here..."></textarea>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Send Message</button>
+                    </form>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        © 2026 Your Name · Built with pure HTML & CSS
+    </footer>
+</div>
+</body>
+</html>
